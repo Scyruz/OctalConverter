@@ -30,3 +30,16 @@ describe('givenDecimal2WhenConvertThen2', function () {
     })
 })
 
+describe('givenDecimal8WhenConvertThen10', function () {
+    it('convert(8) = 10', function () {
+        //Given
+        var a = 8;
+        var expectedResult = 10;
+
+        // When
+        var actualResult = octalConverter.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})

@@ -57,3 +57,17 @@ describe('givenDecimal95WhenConvertThen137', function () {
         assert.strictEqual(expectedResult, actualResult);
     })
 })
+
+describe('givenDecima2048WhenConvertThen4000', function () {
+    it('convert(2048) = 4000', function () {
+        //Given
+        var a = 2048;
+        var expectedResult = 4000;
+
+        // When
+        var actualResult = octalConverter.convert(a);
+
+        // Then
+        assert.strictEqual(expectedResult, actualResult);
+    })
+})

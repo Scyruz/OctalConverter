@@ -1,11 +1,10 @@
 function convert(decimal) {
 
-    var a = Math.floor(decimal / 8);
-    var b = decimal % 8;
-    var c = a * 10 + b;
+    const base = 8;
+    var octalString = decimal.toString(base);
+    var octalNumber = parseInt(octalString);
 
-
-    return c;
+    return octalNumber;
 }
 
 exports.convert = convert;
